@@ -1,0 +1,12 @@
+(defun findLastElement (L)
+    (if (null L) ())
+    (if (and (car L) (cdr L)) (findLastElement (cdr L)) (car L))
+)
+
+; Test 1
+(write (findLastElement (list 1 2 3 4 5 6 7 8 9 10)))
+(terpri)
+
+; Test 2
+(write (findLastElement (list "Apple" "Bear" "Cat" "Dog")))
+(terpri)
